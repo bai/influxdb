@@ -280,7 +280,7 @@ func TestDelete(t *testing.T) {
 				statusCode: http.StatusBadRequest,
 				body: fmt.Sprintf(`{
 					"code": "invalid",
-					"message": "invalid request; error parsing request json: Err in Child 1, err: the logical operator OR is not supported for delete predicate yet"
+					"message": "invalid request; error parsing request json: the logical operator OR is not supported yet at position 25"
 				  }`),
 			},
 		},
